@@ -5,9 +5,9 @@ module OmniAuth
     class Uber < OmniAuth::Strategies::OAuth2
       DEFAULT_SCOPE = 'profile'
 
-      option :client_options, :site          => 'https://api.uber.com',
-                              :authorize_url => 'https://login.uber.com/oauth/authorize',
-                              :token_url     => 'https://login.uber.com/oauth/token'
+      option :client_options, :site          => 'https://api.uber.com.cn',
+                              :authorize_url => 'https://login2.uber.com.cn/oauth/authorize',
+                              :token_url     => 'https://login2.uber.com.cn/oauth/token'
 
       uid { raw_info['uuid'] }
 
